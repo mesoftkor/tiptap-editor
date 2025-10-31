@@ -1,0 +1,319 @@
+/* Mesoft Tiptap Editor Styles */
+
+.mesoft-tiptap-wrapper {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  background: white;
+}
+
+.mesoft-tiptap-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0.5rem;
+}
+
+.toolbar-group {
+  display: flex;
+  gap: 0.125rem;
+  border-right: 1px solid #e2e8f0;
+  padding-right: 0.5rem;
+}
+
+.toolbar-group:last-child {
+  border-right: none;
+}
+
+.toolbar-btn {
+  padding: 0.375rem;
+  border: none;
+  background: transparent;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  font-size: 0.875rem;
+  color: #1e293b;
+}
+
+.toolbar-btn:hover {
+  background-color: #f1f5f9;
+}
+
+.toolbar-btn.active {
+  background-color: #e2e8f0;
+}
+
+.toolbar-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.toolbar-btn.remove-link {
+  color: #dc2626;
+}
+
+.toolbar-btn.remove-link:hover {
+  background-color: #fee2e2;
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.mesoft-tiptap-content-wrapper {
+  padding: 1rem;
+}
+
+.mesoft-tiptap-readonly {
+  padding: 1rem;
+  line-height: 1.6;
+  color: #1e293b;
+}
+
+.mesoft-slash-menu-container {
+  animation: fadeIn 0.15s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slash Menu Styles */
+.mesoft-slash-menu {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  max-height: 500px;
+  overflow-y: auto;
+  min-width: 220px;
+  z-index: 10;
+}
+
+.mesoft-slash-menu-empty {
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.mesoft-slash-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: left;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.mesoft-slash-menu-item:hover,
+.mesoft-slash-menu-item.selected {
+  background-color: #f1f5f9;
+}
+
+.mesoft-slash-menu-item:first-child {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.mesoft-slash-menu-item:last-child {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.mesoft-slash-menu-item .icon {
+  font-size: 0.875rem;
+}
+
+.mesoft-slash-menu-item .content {
+  flex: 1;
+}
+
+.mesoft-slash-menu-item .title {
+  font-weight: 500;
+  color: #1e293b;
+}
+
+/* Tiptap Content Styles */
+.mesoft-tiptap-content {
+  outline: none;
+}
+
+.ProseMirror {
+  outline: none;
+}
+
+.ProseMirror h1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  line-height: 1.2;
+}
+
+.ProseMirror h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  line-height: 1.3;
+}
+
+.ProseMirror h3 {
+  font-size: 1.17em;
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  line-height: 1.4;
+}
+
+.ProseMirror p {
+  margin: 0.5em 0;
+  line-height: 1.6;
+}
+
+.ProseMirror ul,
+.ProseMirror ol {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.ProseMirror ul {
+  list-style-type: disc;
+}
+
+.ProseMirror ol {
+  list-style-type: decimal;
+}
+
+.ProseMirror li {
+  margin: 0.5rem 0;
+}
+
+.ProseMirror blockquote {
+  border-left: 3px solid #3c50e0;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+  color: #64748b;
+}
+
+.ProseMirror code {
+  background-color: #f1f5f9;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+.ProseMirror pre {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.ProseMirror pre code {
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+.ProseMirror a {
+  color: #3c50e0;
+  text-decoration: underline;
+}
+
+.ProseMirror img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+.ProseMirror mark {
+  background-color: #fef08a;
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.125rem;
+}
+
+/* Placeholder */
+.ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: #adb5bd;
+  pointer-events: none;
+  height: 0;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .mesoft-tiptap-wrapper {
+    background: #1e293b;
+    border-color: #334155;
+  }
+
+  .mesoft-tiptap-toolbar {
+    border-color: #334155;
+  }
+
+  .toolbar-group {
+    border-color: #334155;
+  }
+
+  .toolbar-btn {
+    color: #f1f5f9;
+  }
+
+  .toolbar-btn:hover {
+    background-color: #334155;
+  }
+
+  .toolbar-btn.active {
+    background-color: #475569;
+  }
+
+  .mesoft-tiptap-readonly {
+    color: #f1f5f9;
+  }
+
+  .mesoft-slash-menu {
+    background: #1e293b;
+    border-color: #334155;
+  }
+
+  .mesoft-slash-menu-empty {
+    color: #94a3b8;
+  }
+
+  .mesoft-slash-menu-item:hover,
+  .mesoft-slash-menu-item.selected {
+    background-color: #334155;
+  }
+
+  .mesoft-slash-menu-item .title {
+    color: #f1f5f9;
+  }
+
+  .ProseMirror code {
+    background-color: #334155;
+  }
+
+  .ProseMirror blockquote {
+    color: #94a3b8;
+  }
+}
