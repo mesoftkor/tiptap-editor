@@ -8,6 +8,13 @@ dist
 build
 *.tsbuildinfo
 
+# Example build outputs
+examples/**/.next
+examples/**/.svelte-kit
+examples/**/dist
+examples/**/node_modules
+examples/**/.cache
+
 # IDE
 .vscode
 .idea
