@@ -351,6 +351,12 @@ export async function POST(request: Request) {
 -   Safari (latest)
 -   Edge (latest)
 
+## 버전 관리
+
+이 프로젝트는 [Semantic Versioning](https://semver.org/)을 따릅니다. 버전 관리 및 릴리즈 프로세스는 [VERSIONING.md](./VERSIONING.md)를 참조하세요.
+
+변경사항은 [CHANGELOG.md](./CHANGELOG.md)에서 확인할 수 있습니다.
+
 ## 라이선스
 
 MIT
