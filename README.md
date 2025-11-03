@@ -15,8 +15,28 @@ React, Next.js, Svelte를 지원하는 S3 사전 서명 URL 업로드 기능이 
 
 ## 설치
 
+### npm 레지스트리에서 설치 (npm에 발행된 경우)
+
 ```bash
 npm install @mesoft/tiptap-editor
+```
+
+### GitHub에서 직접 설치
+
+npm 레지스트리에 발행되지 않은 경우, GitHub 저장소에서 직접 설치할 수 있습니다:
+
+```bash
+npm install github:mesoftkor/tiptap-editor
+```
+
+또는 package.json에 직접 추가:
+
+```json
+{
+  "dependencies": {
+    "@mesoft/tiptap-editor": "github:mesoftkor/tiptap-editor"
+  }
+}
 ```
 
 ## 사용법

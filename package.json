@@ -49,6 +49,14 @@
   ],
   "author": "Mesoft",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mesoftkor/tiptap-editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mesoftkor/tiptap-editor/issues"
+  },
+  "homepage": "https://github.com/mesoftkor/tiptap-editor#readme",
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
     "react-dom": "^18.0.0 || ^19.0.0",
