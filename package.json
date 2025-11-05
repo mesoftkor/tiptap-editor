@@ -30,19 +30,19 @@
         "dist",
         "README.md"
     ],
-  "scripts": {
-    "build": "vite build && npm run build:types",
-    "build:types": "tsc --emitDeclarationOnly --outDir dist",
-    "dev": "vite build --watch",
-    "typecheck": "tsc --noEmit",
-    "version:patch": "npm version patch --no-git-tag-version",
-    "version:minor": "npm version minor --no-git-tag-version",
-    "version:major": "npm version major --no-git-tag-version",
-    "release:patch": "npm run version:patch && npm run build && npm run release:create",
-    "release:minor": "npm run version:minor && npm run build && npm run release:create",
-    "release:major": "npm run version:major && npm run build && npm run release:create",
-    "release:create": "node scripts/release.js"
-  },
+    "scripts": {
+        "build": "vite build && npm run build:types",
+        "build:types": "tsc --emitDeclarationOnly --outDir dist",
+        "dev": "vite build --watch",
+        "typecheck": "tsc --noEmit",
+        "version:patch": "npm version patch --no-git-tag-version",
+        "version:minor": "npm version minor --no-git-tag-version",
+        "version:major": "npm version major --no-git-tag-version",
+        "release:patch": "npm run version:patch && npm run build && npm run release:create",
+        "release:minor": "npm run version:minor && npm run build && npm run release:create",
+        "release:major": "npm run version:major && npm run build && npm run release:create",
+        "release:create": "node scripts/release.js"
+    },
     "keywords": [
         "tiptap",
         "editor",
@@ -54,7 +54,10 @@
         "svelte",
         "nextjs"
     ],
-    "author": "Mesoft",
+    "author": {
+        "name": "Mesoft",
+        "url": "https://github.com/mesoftkor"
+    },
     "license": "MIT",
     "repository": {
         "type": "git",
@@ -64,6 +67,15 @@
         "url": "https://github.com/mesoftkor/tiptap-editor/issues"
     },
     "homepage": "https://github.com/mesoftkor/tiptap-editor#readme",
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "engines": {
+        "node": ">=18.0.0",
+        "npm": ">=9.0.0"
+    },
+    "sideEffects": false,
     "peerDependencies": {
         "react": "^18.0.0 || ^19.0.0",
         "react-dom": "^18.0.0 || ^19.0.0",
