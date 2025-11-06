@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2025-11-06
+
+### Fixed
+- 다크모드에서 에디터 본문 텍스트가 검은색으로 표시되어 가독성이 떨어지는 문제 수정
+- 다크모드에서 모든 텍스트 요소(제목, 문단, 리스트)의 색상을 밝은 색상으로 변경
+- 다크모드에서 링크 색상 개선
+- 다크모드에서 하이라이트(형광펜) 색상 개선
+
 ### Added
 - 버전 관리 시스템 (Semantic Versioning)
 - CHANGELOG.md 파일 추가
@@ -31,6 +39,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - TypeScript 타입 정의
 - 예제 프로젝트 (React, Next.js, Svelte)
 
-[Unreleased]: https://github.com/mesoftkor/tiptap-editor/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/mesoftkor/tiptap-editor/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/mesoftkor/tiptap-editor/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/mesoftkor/tiptap-editor/releases/tag/v1.0.0
 

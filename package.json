@@ -1,6 +1,6 @@
 {
     "name": "@mesoft/tiptap-editor",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Universal Tiptap editor component with S3 presigned URL upload support for React, Next.js, and Svelte",
     "type": "module",
     "main": "./dist/index.js",
